@@ -1,0 +1,197 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+<head>
+<title>Halo Apa kabar?</title>
+<!-- 
+This code was made by Rayya R
+Blog: https://sinkronin.com
+Instagram: @rayyarrr
+TikTok: @rayy4r
+-->
+</head>
+<style>
+:root {
+--warna-bg: rgba(0, 0, 0, .5); 
+--warna-teks: white;
+--bingkai: 20px 0 20px 0;
+}
+body{background-color:#101010;font-family: 'Ubuntu', sans-serif;padding: 25px} a{text-decoration:none;}
+body::before{content:"\00A9  Kenangan Aja";color:white;opacity:.3;font-size:2vw;position:fixed;bottom:25px;left:25px;}
+#bodyblur{opacity:1;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;}
+@keyframes jj{0%  {transform: scale(1.1);} 50% {transform: scale(1.2);} 100% {transform: scale(1.1);}}
+#bodyblur img{animation-name:jj;animation-duration: 6s;animation-iteration-count: infinite;}
+
+@keyframes leaves {0% {transform: scale(1.0);} 100% {transform: scale(.8);}}
+#lope, .lopdeg{animation: leaves 1s ease-in-out infinite alternate;-webkit-animation: leaves 1s ease-in-out infinite alternate;}
+.lovein:hover{transform: scale(1.3);}
+
+@keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
+blockquote{opacity:0;visibility:hidden;transition:all 1s ease;position:relative;margin-top:120px;margin-left:0;margin-right:0;}
+blockquote{width:400px;background:var(--warna-bg);color:var(--warna-teks);font-size:18px;font-weight:700;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);text-align:center;line-height:1.3em;padding:16px 35px 16px 35px;border: 1px solid var(--warna-teks);border-radius:var(--bingkai);}
+blockquote p:first-child{font-size:18px;font-weight:700;text-align:center;} #katabawah{font-size:15px;}
+p{margin:1.5em 0;transition:all .3s ease;}
+#bq img{display:none;width:160px;height:160px;margin:20px 0 0 0;}
+#bq img:first-child{display:inline-flex}
+#akhiran, #idkirim{display:none;color:#fff;font-size:16px;text-align:center;background:rgba(0,0,0,.55);text-shadow: 0px;padding:10px;border-radius:var(--bingkai);line-height:10px;transition:all .2s ease;} #akhiran:hover, #idkirim:hover{transform: scale(.9);opacity:.5;}
+
+#pergeseran{opacity:0;visibility:hidden;transition:all 2s ease;display:flex;flex-wrap:nowrap;align-items:flex-start;justify-content:flex-start;position:relative;max-width:500px;padding:0 20px; overflow-y:hidden;overflow-x:scroll;scroll-behavior:smooth;scroll-snap-type:x mandatory; -ms-overflow-style:none;-webkit-overflow-scrolling:touch}
+#pergeseran p{background:var(--warna-bg);color:var(--warna-teks);text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);border: 1px solid var(--warna-teks);border-radius:var(--bingkai);padding:8px;display:flex;flex-wrap:nowrap;text-align:center;font-size:16px;font-weight:700;align-items:center;justify-content:center;flex-shrink:0; width:90%; min-height:130px;margin:0 15px 0 0; scroll-snap-align:center} #pergeseran > *:last-child{margin-right:0} #pergeseran:after{content:'';display:block;flex-shrink:0; align-self:stretch;padding-left:20px}
+#pergeseran p b{display:block;} #pergeseran p b img{width:80px;height:80px;margin-bottom:20px;}
+/*#pergeseran p b span{display:flex;}*/
+#tm{color:#FFB400;transition:all .5s ease;} #tm:hover{transform: scale(.7);}
+#idgeser{font-size:17px;color:var(--warna-teks);text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);}
+
+.lovein{font-size:50px;display:flex;align-items:center;justify-content:center;transition:all .3s ease;}
+,.lovein svg{width:80px;height:80px;fill:#fefefe}
+
+.content2{display:block;text-align:center;width:100%;height:180px;margin-top:50px;}
+.content2 > *{display:flex;align-items:center;justify-content:center;margin-top:15px;font-size:17px;color:white}
+.image img{border-radius:10%;transform:scale(.1);transition:all .8s ease;}
+#k2 .image > *{margin-bottom:40px;} #k2{font-weight:700;font-size:17px;color:white;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);} #final1{transition:all 3s ease;}
+
+.content2{display:none;}
+#Content, #k2{animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:0;margin-top:50px;width:100%;height:180px;transition:all .8s ease;}
+#Content > *, #k2 > *{display:flex;align-items:center;justify-content:center;margin-top:15px;}
+#k2, #final1{transform:scale(.4);}
+
+.swal2-title{margin-right:20px;margin-left:20px;font-size:18px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-modal{background:rgba(255, 255, 255, .99);border: .7px solid #000;border-radius:var(--bingkai);/*top:-60px;*/}
+
+.fa-heart-broken {opacity:.4;color:white;font-size: 30px;position: absolute;animation:  heartMove linear 1;top: -10vh;z-index: 0;}
+@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
+</style>
+<body><div id="bodyblur"><img id="wallpaper" src="" width="100%" height="100%"/></div>
+
+<!-- Isi Konten Pertama --><div id='Content'><p id="idgeser"></p>
+
+<div><div id='pergeseran'>
+
+<!-- Pesan -->
+  <audio autoplay>
+<source src="kntl.mp3" type="audio/mp3" ></audio>
+  
+<p><b><img src="./1.gif"/><br>
+	<span>Apa kabar Yang pernah ada?</span>
+</b></p>
+
+<p><b><img src="./2.gif"/><br>
+	<span>Masih inget ... dulu? </span>
+</b></p>
+
+<p><b><img src="./3.gif"/><br>
+	<span>Kita pernah ketawa nangis bareng &#128577;</span>
+</b></p>
+
+<p><b><img src="./4.gif"/><br>
+	<span>ga nyangka udah ada yang gantiin &#129402;</span>
+</b></p>
+
+  <p><b><img src="https://i.pinimg.com/originals/39/a7/9e/39a79e7c86f32bcfe76de73c649deba1.gif"/><br>
+	<span>Jujur Masih kejebak kenangan kita dulu </span>
+</b></p>
+
+  <p><b><img src="https://media.tenor.com/925LDfyVUGEAAAAj/cute-sad.gif"/><br>
+	<span>Bukan karna siapa kamu tapi karna siapa kita</span>
+</b></p>
+   <p><b><img src="https://i.pinimg.com/originals/a8/5c/fa/a85cfa512f05501f4df90fe1967de58e.gif"/><br>
+    <span>Inget Awal kita ketemu</span>
+  </b></p>
+  <p><b><img src="https://i.pinimg.com/originals/fa/21/a3/fa21a3a080054b8aa0fbebde94552d48.gif"/><br>
+    <span>Berkali kali masalah kita lewatin bareng </span>
+  </b></p>
+  <p><b><img src="https://www.icegif.com/wp-content/uploads/cyber-monday-icegif-5.gif"/><br>
+    <span>Ga perduli apa kata orang </span>
+  </b></p>
+  <p><b><img src="https://i.pinimg.com/originals/70/11/4d/70114d826b655dc2e039fd1cf4ead227.gif"/><br>
+    <span>Pernah sebahagai itu kita </span>
+  </b></p>
+  <p><b><img src="https://media1.tenor.com/m/0ZNy-QfbcBYAAAAC/anime.gif"/><br>
+    <span>Maaf aku Banyak Salah</span>
+  </b></p>
+  <p><b><img src="https://img1.picmix.com/output/stamp/normal/4/5/3/5/2325354_ce869.gif"/><br>
+    <span>Sering buat kecewa Bikin km marah </span>
+  </b></p>
+  <p><b><img src="https://catatansebelumhujan.files.wordpress.com/2024/01/e4014d5c1543e6893425c55b80c501be.gif?w=498"/><br>
+    <span>sekali lagi aku Pamit Makasih buat waktu nya </span>
+  </b></p>
+
+
+<p><b><img src="https://media.tenor.com/G2s2U-dZOlMAAAAC/anime-smile.gif"/><br>
+	<span>Sehat-sehat aku ingin slalu liat kamu bahagia walau tinggal cerita</span>
+</b></p>
+
+ 
+<!-- Tombol Akhiran --><p><span id="akhiran" onClick="mulaiakhir();this.onclick=null;">[ Liat Kenangan kita ]</span></p>
+
+</div></div>
+</div>
+
+<!-- Isi Konten Kedua --><div id='k2'><div><blockquote id='bq'>
+
+<video loop controls width="200" src="https://media.discordapp.net/attachments/1194152519841108021/1201213384209748129/lv_7033627408464923906_20231028025645.mp4?ex=65c90024&is=65b68b24&hm=2fc1414f0d3697ec4ea653abec9a1ae43f9502059a6f12dfabc8a6b4ef307085&" type="video/mp4"> </video>
+<p>Makasih buat waktu nya &#128578;</p>
+
+<p id="idkirim" onClick="menuju();">Apa masih ada kesempatan??</p></blockquote></div></div>
+
+<script>
+  function nonFo() {document.getElementById('idfoto').style.display = "none";} function showFo() {document.getElementById('idfoto').style.display = "block";}
+  function nonDiv() {document.getElementById('Content').style = "opacity:0;visibility:hidden;margin-top:30vh;";} 
+  function showDiv() {setTimeout(kpemb,100);document.getElementById('Content').style = "opacity:1;margin-top:16vh;animation:kont 3s infinite;";document.getElementById("pergeseran").style = "opacity:1;visibility:visible;";document.getElementById("akhiran").style = "display:block";}
+  function showAkhir() {setInterval(createHeart,200);document.getElementById('bodyblur').style = "opacity:1;";document.getElementById('k2').style = "opacity:1;transform:scale(1);margin:0;";document.getElementById('Content').style.display = "none";}
+  function mulaiakhir() {nonDiv();setTimeout(showAkhir,500);setTimeout(finalis,600);}
+  function showTom() {document.getElementById('idkirim').style = "display:block;";}
+  var aa=0,pemb;pemb = "";var i=0,halo;halo = "";var u=0,text2;text2 = "";var o=0,text3;text3 = "";var a=0,final1;final1 = "";var ab=0,final2;final2 = "";
+  function kpemb() {if(aa<pemb.length){document.getElementById("idgeser").innerHTML += pemb.charAt(aa);aa++;setTimeout(kpemb,80);}if(aa==pemb.length){document.getElementById("idgeser").innerHTML = pemb + "&#128073;";}}
+  function finalis() {document.getElementById("bq").style = "opacity:1;visibility:visible;margin-top:0";setTimeout(showTom,4000);}
+  const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',}); const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,}); const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 1500, timerProgressBar: true,});
+  function play() {var audio = new Audio('https://media.discordapp.net/attachments/1194152519841108021/1201220982522773556/y2mate.bz_-_kelingan-mbiyen-ndx-a.k.a-lirik.mp3?ex=65c90737&is=65b69237&hm=fabfe364c12def7418f3c93ff4fe1781a5ebf20bc96e0a7cb0b7879c8dac26c4&' + linkmp3);audio.play();}
+  async function menuju(){await swals.fire('Kalau masih ada waktu yang bisa kita ulang');window.location = "https://api.whatsapp.com/send?phone=254772856434&text=apa kabar" + pesanwhatsapp;}
+</script>
+
+<script type="text/javascript">
+            async function mulaitanya(){
+            	var { isConfirmed: tanyawal } = await swals.fire({title: `Mau isi nama dulu atau langsung aja?`, imageUrl: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/959c3777-8522-48ad-801c-9b6c65164888/daywn96-998d75e8-c18d-4f0d-9e25-b2671a9b964f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk1OWMzNzc3LTg1MjItNDhhZC04MDFjLTliNmM2NTE2NDg4OFwvZGF5d245Ni05OThkNzVlOC1jMThkLTRmMGQtOWUyNS1iMjY3MWE5Yjk2NGYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-jeA2ZpjXqoBEI0dta4FKOhV5zoXN0AKyIGWxm6u2iA', imageWidth: 120, imageHeight: 120, confirmButtonText: 'Isi Nama', cancelButtonText: 'Langsung Aja', allowOutsideClick: false, showCancelButton: true,
+                });if(tanyawal){mulai();} else {nama = 'Kamu';lanjut();play();}
+            }
+
+            async function mulai(){
+                var { value: nama } = await swals.fire({
+                    title: 'Masukin nama kamu',
+                    input: 'text',
+                    imageUrl: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/959c3777-8522-48ad-801c-9b6c65164888/daywn96-998d75e8-c18d-4f0d-9e25-b2671a9b964f.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk1OWMzNzc3LTg1MjItNDhhZC04MDFjLTliNmM2NTE2NDg4OFwvZGF5d245Ni05OThkNzVlOC1jMThkLTRmMGQtOWUyNS1iMjY3MWE5Yjk2NGYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-jeA2ZpjXqoBEI0dta4FKOhV5zoXN0AKyIGWxm6u2iA', imageWidth: 120, imageHeight: 120,
+                    allowOutsideClick: false,
+                    showCancelButton: false,
+                });
+                if(nama && nama.length < 11){
+                	window.nama = nama;
+                    lanjut();play();
+                } else {
+                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');
+                    mulai();
+                }
+            }
+            
+            async function tanpanama(){
+                nama = "Kamu";
+				window.nama = nama;
+                lanjut();
+             }
+            
+             async function lanjut() {
+             	wallpaper.src = "https://media.discordapp.net/attachments/1194152519841108021/1201231505339453581/IMG-20230923-WA0005.jpg?ex=65c91104&is=65b69c04&hm=93798f830a3bdb08458840f4&";
+             	await swals.fire('Apa kabar mantan tersayang!', 'Sekarang lihat ini ya :)');
+             	pemb = "Geser Cuma mau curhat    ";
+             	
+                 pesanwhatsapp = "Hehe maaf ya";
+                 linkmp3 = 'kntl.mp3';
+                 
+                 showDiv();play();
+             }
+             
+             tanpanama();
+</script>
+<script>
+const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart-broken"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart-broken"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+</body>
+  </html>
